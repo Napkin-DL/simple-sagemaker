@@ -111,8 +111,8 @@ def main():
 #         print(f" train_auc_mean : {train_auc_mean}, train_auc_std : {train_auc_std}, test_auc_mean : {test_auc_mean}, test_auc_std : {test_auc_std}, ")
 
     # Select the best score
-    print(f"[0]#011train-auc:{cv_results.iloc[-1]['train-auc-mean']}")
-    print(f"[1]#011validation-auc:{cv_results.iloc[-1]['test-auc-mean']}")
+    print(f"[0]train-auc:{cv_results.iloc[-1]['train-auc-mean']}")
+    print(f"[1]validation-auc:{cv_results.iloc[-1]['test-auc-mean']}")
     
     metrics_data = {
         'classification_metrics': {
